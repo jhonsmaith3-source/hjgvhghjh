@@ -1,0 +1,15 @@
+[project]
+name = "repo-catchup-worker"
+version = "0.1.0"
+description = "GitHub repo catch-up digest workflow for Mistral Workflows"
+requires-python = ">=3.11"
+dependencies = [
+    "mistralai-workflows[mistralai]>=3.10",
+]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
